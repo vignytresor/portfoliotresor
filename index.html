@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tankoua Tresor — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="editor">
+
+      <nav class="tabs" role="tablist" aria-label="Sections du portfolio">
+        <button class="tab active" role="tab" aria-selected="true" aria-controls="home" id="tab-home" data-target="home">accueil</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="about" id="tab-about" data-target="about">a-propos</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="projets" id="tab-projets" data-target="projets">projets</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="parcours" id="tab-parcours" data-target="parcours">parcours</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="competences" id="tab-competences" data-target="competences">competences</button>
+        <span class="tab-indicator" aria-hidden="true"></span>
+      </nav>
+
+      <div class="editor-body">
+
+        <!-- Accueil (vue par défaut) -->
+        <section class="panel active" id="home" role="tabpanel" aria-labelledby="tab-home">
+          <div class="landing">
+            <div class="landing-text">
+              <div class="mark">TT</div>
+              <h1>Tankoua Tresor</h1>
+              <p class="role">Étudiant en BTS SIO<span class="sep">·</span><span class="spec">2ᵉ année</span></p>
+              <p class="hint">cliquez sur un onglet ci-dessus pour explorer mon profil</p>
+            </div>
+
+            <svg class="hero-art" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma illustrant un serveur relié à des nœuds réseau">
+              <g stroke="var(--panel-line)" stroke-width="1.4" fill="none">
+                <path d="M70 70 L28 32" />
+                <path d="M70 70 L112 30" />
+                <path d="M70 70 L26 100" />
+                <path d="M70 70 L110 106" />
+                <path d="M70 70 L70 20" />
+              </g>
+              <g fill="var(--teal)">
+                <circle r="2.4" cx="70" cy="70">
+                  <animateMotion dur="3.4s" repeatCount="indefinite" path="M0 0 L-42 -38" />
+                </circle>
+                <circle r="2.4" cx="70" cy="70">
+                  <animateMotion dur="4.1s" begin="0.6s" repeatCount="indefinite" path="M0 0 L42 -40" />
+                </circle>
+                <circle r="2.4" cx="70" cy="70">
+                  <animateMotion dur="3.8s" begin="1.1s" repeatCount="indefinite" path="M0 0 L-44 30" />
+                </circle>
+              </g>
+              <g>
+                <circle cx="28" cy="32" r="6" fill="var(--panel)" stroke="var(--panel-line)" stroke-width="1.4" />
+                <circle cx="112" cy="30" r="6" fill="var(--panel)" stroke="var(--panel-line)" stroke-width="1.4" />
+                <circle cx="26" cy="100" r="6" fill="var(--panel)" stroke="var(--panel-line)" stroke-width="1.4" />
+                <circle cx="110" cy="106" r="6" fill="var(--panel)" stroke="var(--panel-line)" stroke-width="1.4" />
+                <circle cx="70" cy="20" r="5" fill="var(--panel)" stroke="var(--teal)" stroke-width="1.4" />
+              </g>
+              <rect x="50" y="54" width="40" height="32" rx="5" fill="var(--panel)" stroke="var(--accent)" stroke-width="1.6" />
+              <line x1="56" y1="63" x2="84" y2="63" stroke="var(--panel-line)" stroke-width="1.4" />
+              <line x1="56" y1="70" x2="84" y2="70" stroke="var(--panel-line)" stroke-width="1.4" />
+              <line x1="56" y1="77" x2="84" y2="77" stroke="var(--panel-line)" stroke-width="1.4" />
+              <circle cx="80" cy="63" r="1.6" fill="var(--accent)" />
+            </svg>
+          </div>
+        </section>
+
+        <!-- À propos de moi -->
+        <section class="panel" id="about" role="tabpanel" aria-labelledby="tab-about" hidden>
+          <p>
+            Je m'appelle Tankoua Tresor, étudiant en BTS Services Informatiques aux Organisations
+            (SIO). Curieux et rigoureux, j'aime comprendre comment les systèmes fonctionnent, du code
+            jusqu'à l'infrastructure qui le fait tourner.
+          </p>
+          <p>
+            Je m'intéresse à l'administration des systèmes, à la configuration des réseaux et au
+            développement, et j'apprends autant en cours qu'en pratiquant de mon côté, en montant des
+            configurations et en résolvant des problèmes concrets.
+          </p>
+          <p>
+            Je cherche aujourd'hui à consolider ces compétences à travers mes projets de formation et un
+            futur stage, avec l'objectif de construire un profil solide pour la suite de mon parcours
+            professionnel dans l'informatique.
+          </p>
+        </section>
+
+        <!-- Projets -->
+        <section class="panel" id="projets" role="tabpanel" aria-labelledby="tab-projets" hidden>
+          <div class="empty-state">
+            <svg class="empty-icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="6" y="14" width="36" height="26" rx="3" fill="none" stroke="var(--panel-line)" stroke-width="2" />
+              <path d="M6 18 L18 18 L21 22 L42 22" fill="none" stroke="var(--panel-line)" stroke-width="2" />
+              <circle cx="24" cy="30" r="1.6" fill="var(--teal)" />
+            </svg>
+            <p class="empty-title">Aucun projet publié pour le moment</p>
+            <p class="empty-sub">Les projets réalisés pendant le BTS SIO seront ajoutés ici au fur et à mesure.</p>
+          </div>
+        </section>
+
+        <!-- Parcours scolaire -->
+        <section class="panel" id="parcours" role="tabpanel" aria-labelledby="tab-parcours" hidden>
+          <div class="timeline">
+            <div class="step">
+              <span class="year">2023</span>
+              <div class="title">BAC scientifique — Collège la Conquête</div>
+            </div>
+            <div class="step">
+              <span class="year">2024 — 2025</span>
+              <div class="title">1ʳᵉ année — IUT Douala</div>
+            </div>
+            <div class="step">
+              <span class="year">2025 — 2026</span>
+              <div class="title">1ʳᵉ année BTS SIO — F2I</div>
+            </div>
+            <div class="step current">
+              <span class="year">2026 — 2027</span>
+              <div class="title">2ᵉ année BTS SIO SISR — F2I</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Compétences -->
+        <section class="panel" id="competences" role="tabpanel" aria-labelledby="tab-competences" hidden>
+          <div class="skills">
+            <div class="skill-group">
+              <div class="skill-head">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="8 6 2 12 8 18"/><polyline points="16 6 22 12 16 18"/></svg>
+                <h3>Langages de programmation</h3>
+              </div>
+              <ul class="tags">
+                <li>HTML</li>
+                <li>PHP</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <div class="skill-head">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1.5"/><line x1="8" y1="20" x2="16" y2="20"/><line x1="12" y1="16" x2="12" y2="20"/></svg>
+                <h3>Systèmes</h3>
+              </div>
+              <ul class="tags">
+                <li>Windows</li>
+                <li>Linux</li>
+                <li>Notions de virtualisation</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <div class="skill-head">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7 L12 14 M12 14 L5 17 M12 14 L19 17"/></svg>
+                <h3>Réseaux</h3>
+              </div>
+              <ul class="tags">
+                <li>DNS</li>
+                <li>DHCP</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const tabs = Array.from(document.querySelectorAll('.tab'));
+    const panels = document.querySelectorAll('.panel');
+    const indicator = document.querySelector('.tab-indicator');
+
+    function moveIndicator(tab) {
+      indicator.style.width = tab.offsetWidth + 'px';
+      indicator.style.transform = 'translateX(' + tab.offsetLeft + 'px)';
+    }
+
+    function activate(tab) {
+      tabs.forEach(function (t) {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      panels.forEach(function (p) {
+        p.classList.remove('active');
+        p.hidden = true;
+      });
+
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+      moveIndicator(tab);
+
+      const target = document.getElementById(tab.dataset.target);
+      target.hidden = false;
+      target.classList.add('active');
+    }
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () { activate(tab); });
+    });
+
+    window.addEventListener('load', function () {
+      moveIndicator(document.querySelector('.tab.active'));
+    });
+    window.addEventListener('resize', function () {
+      moveIndicator(document.querySelector('.tab.active'));
+    });
+  </script>
+</body>
+</html>
